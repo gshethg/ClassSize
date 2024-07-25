@@ -1,0 +1,34 @@
+---
+title: "ClassSize"
+author: "Gitanjali Sheth"
+format: html
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(brms)
+library(tidybayes)
+```
+
+Question?
+What is the effect of class size in the performance of students in the long-term?
+What is the effect of class size on g4math test for kids in Tenesse from grade kindergarten to 4th.
+
+QoI?
+
+
+Preceptor table?
+Unit: Students
+Covariates: race, classtype
+outcome: hsgrad
+treatment: classtype
+modeltype: Causal
+
+```{r}
+class_data <- read_csv(data/STAR.csv, show_col_types = FALSE)
+```
+
+
